@@ -1,0 +1,12 @@
+---
+- hosts: dev
+  become: yes
+  vars:
+    pkgs:
+      - git
+      - tomcat
+  tasks:
+  - name: install various packages using variables concept
+    yum:
+      name: "{{ pkgs }}"
+      state: present
