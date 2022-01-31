@@ -5,6 +5,7 @@
     pkgs:
       - git
       - tomcat
+      - rpm
   tasks:
   - name: install various packages using variables concept
     yum:
